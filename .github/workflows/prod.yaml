@@ -1,12 +1,13 @@
-name: First-GHA-test
+name: Github_Test
 
 on:
   push:
 
 jobs:
   b17d_first_job:
-    runs-on: ubuntu-latest
+    # runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
       - name: message
-        run: echo "Welcome to GitHub Actions by Batch17 Champs"
+        run: echo "This is self-host runner by B17D"
